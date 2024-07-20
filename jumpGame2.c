@@ -1,3 +1,4 @@
+#include<stdio.h>
 bool canJump(int* nums, int numsSize) {
     int maxReach = 0;
     for (int i = 0; i < numsSize; i++) {
@@ -10,4 +11,9 @@ bool canJump(int* nums, int numsSize) {
         }
     }
     return false;
+}
+int main(){
+    int nums[10], numSize;
+    canJump(&nums, numSize);
+    return 0;
 }
